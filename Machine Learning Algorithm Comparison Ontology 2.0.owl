@@ -230,6 +230,9 @@
         <ObjectProperty IRI="#is_UseCase_of"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#is_compared_to"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#is_related_to"/>
     </Declaration>
     <Declaration>
@@ -275,6 +278,12 @@
         <DataProperty IRI="http://webprotege.stanford.edu/RpB8qw2GsTLKhn4U2bL72G"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Library"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#description"/>
     </Declaration>
     <Declaration>
@@ -291,6 +300,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasParameters"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isNaturalGraph"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#licenseStatus"/>
@@ -356,6 +368,9 @@
         <NamedIndividual IRI="http://webprotege.stanford.edu/RuAdcLyvcGRjexrsgxoXXv"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AUC"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#MAD"/>
     </Declaration>
     <Declaration>
@@ -407,6 +422,13 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_compared_to"/>
+            <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#is_related_to"/>
             <Class IRI="http://webprotege.stanford.edu/R7TljWNIGCS1fTGVy47GMS7"/>
         </ObjectSomeValuesFrom>
@@ -435,6 +457,13 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="#Library"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="#description"/>
             <Datatype abbreviatedIRI="owl:rational"/>
         </DataSomeValuesFrom>
@@ -456,8 +485,15 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="#title"/>
+            <DataProperty IRI="#programmingLanguage"/>
             <Datatype abbreviatedIRI="xsd:Name"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#title"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -582,6 +618,13 @@
         <DataSomeValuesFrom>
             <DataProperty IRI="http://webprotege.stanford.edu/RZze1lVEuTpxDMEcJRL9fJ"/>
             <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/R9437sRn65PT6G0WYgp7LB9"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="http://webprotege.stanford.edu/RlnATiyQLbvtD2VMBtZmal"/>
+            <Datatype abbreviatedIRI="xsd:Name"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -842,6 +885,13 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/RuQBjT0VhzGIq63mxkjr9j"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="#isNaturalGraph"/>
+            <Datatype abbreviatedIRI="xsd:boolean"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://webprotege.stanford.edu/RuQBjT0VhzGIq63mxkjr9j"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="#title"/>
             <Datatype abbreviatedIRI="xsd:Name"/>
         </DataSomeValuesFrom>
@@ -853,6 +903,13 @@
     <SubClassOf>
         <Class IRI="http://webprotege.stanford.edu/RzenLrqV0WPaIl1Wr0Ticv"/>
         <Class IRI="http://webprotege.stanford.edu/RB4nJf91r9uMGeTsNSB5j74"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#ID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Adversarial"/>
@@ -984,6 +1041,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://webprotege.stanford.edu/RwxGbn70lybtVxkZhirk1V"/>
+        <NamedIndividual IRI="#AUC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://webprotege.stanford.edu/RwxGbn70lybtVxkZhirk1V"/>
         <NamedIndividual IRI="#MAD"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1011,6 +1072,10 @@
         <ObjectProperty IRI="#is_Relation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_compared_to"/>
+        <ObjectProperty IRI="#is_Relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#is_related_to"/>
         <ObjectProperty IRI="#is_Relation"/>
     </SubObjectPropertyOf>
@@ -1031,6 +1096,9 @@
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#is_UseCase_of"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#is_compared_to"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#is_related_to"/>
@@ -1071,6 +1139,10 @@
         <Class IRI="http://webprotege.stanford.edu/R7w2m7DEXWrAWtGx9MBo9kA"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_compared_to"/>
+        <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#is_related_to"/>
         <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
     </ObjectPropertyDomain>
@@ -1093,6 +1165,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_UseCase_of"/>
         <Class IRI="http://webprotege.stanford.edu/R9437sRn65PT6G0WYgp7LB9"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_compared_to"/>
+        <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is_related_to"/>
@@ -1159,9 +1235,21 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#Library"/>
+        <DataProperty IRI="http://webprotege.stanford.edu/RBYfCGcHz9SddDOHc0BL6G3"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isNaturalGraph"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#socialMedia"/>
         <DataProperty IRI="http://webprotege.stanford.edu/RBYfCGcHz9SddDOHc0BL6G3"/>
     </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Library"/>
+        <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasHyperparameters"/>
         <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
@@ -1181,6 +1269,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#hasParameters"/>
         <Class IRI="http://webprotege.stanford.edu/R7KFoOT3sWg90wZxXPqy2OX"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isNaturalGraph"/>
+        <Class IRI="http://webprotege.stanford.edu/RuQBjT0VhzGIq63mxkjr9j"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#licenseStatus"/>
@@ -1253,6 +1345,22 @@
     <DataPropertyRange>
         <DataProperty IRI="http://webprotege.stanford.edu/RpB8qw2GsTLKhn4U2bL72G"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Library"/>
+        <Datatype abbreviatedIRI="xsd:Name"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Library"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isNaturalGraph"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#licenseStatus"/>
@@ -1822,6 +1930,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AUC</IRI>
+        <Literal>AUC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
+        <IRI>#AUC</IRI>
+        <Literal>Area Under the Curve</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#MAD</IRI>
         <Literal xml:lang="en">MAD</Literal>
     </AnnotationAssertion>
@@ -1829,6 +1947,11 @@
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
         <IRI>#MAD</IRI>
         <Literal xml:lang="en">Mean Absolute Deviation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Miscellaneoues</IRI>
+        <Literal>Miscellaneous</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#altLabel"/>
@@ -1849,6 +1972,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#description</IRI>
         <Literal>May include abstract, table of contents, or text of the resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isNaturalGraph</IRI>
+        <Literal>isNaturalDataset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
